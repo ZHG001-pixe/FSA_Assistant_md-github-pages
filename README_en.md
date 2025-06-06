@@ -21,26 +21,26 @@ FSA_Assistant is an upper-level computer software that integrates comprehensive 
 ## navigation bar
 The navigation bar mainly realizes the search and selection of actuators as well as the switching between pages.
 
-![alt text](./image/image.png)
+![alt text](./image/image_en.png)
 
 **The upper part of the navigation bar**，The main function is to achieve page switching. In the navigation bar, "Information", "Exercise", "Monitoring", and "Connection" are four different buttons,**When the button is clicked**, the corresponding sub-interface will be displayed in the right blank area. **When the button is double-clicked**, the corresponding sub-interface will be displayed in a separate window by itself. (The right blank area defaults to showing the information page.)
 
 **The lower part of the navigation bar**，The main functions include displaying, searching, and clearing for the actuators. The "Broadcast Settings", "Clear", "Search", and "Filter" buttons in the navigation bar represent four different buttons. After pressing the search button, all connected actuators will be retrieved and displayed in the blank area below. When the clear button is pressed, all retrieved actuators will be deleted. When any retrieved actuator is pressed, the option of that actuator will be highlighted, indicating the selected state (the selected state is used in each sub-page).
 
 <div style="text-align: center;">
-  <img src="./image/image-1.png" alt="Selected equipment status"><br>
+  <img src="./image/image-1_en.png" alt="Selected equipment status"><br>
   <em>Selected equipment status</em>
 </div>
 
 <div style="text-align: center;">
-  <img src="./image/image2.png" alt="Device not selected state"><br>
+  <img src="./image/image2_en.png" alt="Device not selected state"><br>
   <em>Device not selected state</em>
 </div>
 
 ## Information page
 The information page mainly displays the information of the selected actuators.
 
-![alt text](./image/info.png)
+![alt text](./image/info_en.png)
 
 The monitoring interface is mainly divided into eight sections, among which 
 - Region 1 is the **reboot area**, where the reboot device button can restart the selected actuator. Another reboot button can restart the software (the shortcut key Ctrl+R can also restart the software).
@@ -54,17 +54,17 @@ The monitoring interface is mainly divided into eight sections, among which
 ## Run Page
 The run Page mainly enables the setting of speed, position and current for the selected actuator, as well as allowing the actuator to rotate according to the specified waveform and enabling the observation of the waveform data of a single actuator.
 
-![Run Page picture](./image/run.png)
+![Run Page picture](./image/run_en.png)
 
 The Run Page is mainly divided into three parts, among which
 - Region 1 is the **motor parameter setting area**. Here, you can select to observe the position, speed, current, torque, and temperature of the selected motor. When checked, these parameters will be displayed in Region 3. You can also set the enable/disable function of the motor and the calibration function. After pressing the reset chart button, all the charts in Region 3 will be cleared, meaning the data before pressing the button will no longer be displayed. You can also set the relevant parameters of the pid imm (the pid imm configuration takes effect immediately but is not saved. The parameters will be restored after restarting the actuator).
 - Region 2 is the **waveform generation area**. It is mainly divided into two modes. One is the simple mode, where you can directly set fixed positions, speeds, and currents. The other is the advanced mode, which can generate various waveforms (sine, square, triangular, sawtooth, trapezoidal, linearly varying sine, time-varying sine, and periodically varying sine), and send these waveforms to the actuators according to position, speed, or current for execution.
 <div style="text-align: center;">
-  <img src="./image/briefness.png" alt="Simple mode display"><br>
+  <img src="./image/briefness_en.png" alt="Simple mode display"><br>
   <em>Simple mode display</em>
 </div>
 <div style="text-align: center;">
-  <img src="./image/complex.png" alt="Display of complex patterns"><br>
+  <img src="./image/complex_en.png" alt="Display of complex patterns"><br>
   <em>Display of complex patterns</em>
 </div>
 
@@ -88,7 +88,7 @@ Waveform Input Parameter Description:
 ## Monitoring page
 The monitoring page mainly monitors the data (position, speed, current, set position, set speed, set current, torque, MOS temperature, winding temperature) of all the actuators that have been retrieved.
 
-![Monitoring page picture](./image/monitor.png)
+![Monitoring page picture](./image/monitor_en.png)
 
 The monitoring page is mainly divided into three parts, among which
 - Region 1 is the **toolbar**, which contains numerous functions for viewing waveforms. When the y-axis automatic scaling option is selected, the y-axis range in the time-domain graph will be from the maximum to the minimum of the current display area. When the x-axis real-time scrolling option is selected, the x-axis will always display the latest data. When the frequency-domain graph is selected, the frequency-domain graph and frequency-domain information will be displayed in Region 2. After clicking the drag button, you can use the mouse to drag the time-domain graph or frequency-domain graph below to view the desired data. After clicking the box selection to zoom in, you can click and drag the time-domain graph or frequency-domain graph below to enlarge the corresponding coordinate system to the area selected by the mouse. Clicking "Add" will add a waveform data in Region 3. Clicking "Delete" will delete the selected waveform data in Region 3 and it will no longer be displayed in Region 2. You can select multiple waveforms by holding down the Ctrl key. After clicking, a waveform can be added or deleted. When the cursor is enabled, when the mouse is moved to the time-domain graph, the x and y-axis data of the current mouse position will be displayed, and the y-axis data corresponding to the mouse x-axis of this waveform will be displayed in the "Value" column in Region 3.
@@ -114,7 +114,7 @@ Explanation of the parameters that can be set for waveform data:
 ## Series page
 The serial page is used to upgrade or set the speed of all or part of the actuators in humanoid robots, mechanical dogs, and centaurs.
 
-![Series page picture](./image/Series_connection.png)
+![Series page picture](./image/Series_connection_en.png)
 
 The serial interface is mainly divided into four areas, namely:
 - Region 1, the **Machine Type Selection Area**, is mainly used for selecting humanoid robots, mechanical dogs, and centaurs. Among the humanoid robots, there are two different types: T1/T2 and T4. By clicking on the corresponding area with the mouse, you can select the corresponding category. After selection, all the actuator IPs of the robots in that category will be displayed in Region 2.
@@ -166,7 +166,7 @@ The serial interface is mainly divided into four areas, namely:
   ![Delete some waveform diagrams in the monitoring interface](./image/Steps_image8.png)
 
 - <span style="font-size: 20px;">The use of the cursor function in the monitoring interface</span>。  
-  ![Illustration of the usage of the cursor function in the monitoring interface](./image/Steps_image9.png)
+  ![Illustration of the usage of the cursor function in the monitoring interface](./image/Steps_image9_en.png)
 
 - <span style="font-size: 20px;">Set the execution of a single actuator for complex waveforms:</span>。  
   Search (find all actuators) -> Switch to the motion page -> Select the required actuator from the device list -> Click on the advanced mode -> Choose the desired waveform -> Set the required waveform data -> Click on generate waveform -> Click on one of the three buttons for setting speed, setting position, and setting current as needed -> The motor starts to rotate -> When you need to stop, click the stop sending button.
@@ -202,7 +202,7 @@ After the operation, it is necessary to change `sudo iptables -P F` to `sudo ipt
 ## V0.0.1.3 Update function points
 1. Newly added navigation bar button highlighting  
 When the current page is displayed, the corresponding navigation bar will be highlighted. Moreover, by double-clicking, the navigation bar can simultaneously display the contents of multiple navigation bars.  
-![New illustration of highlighted navigation bar buttons](./image/Steps_image15.png)  
+![New illustration of highlighted navigation bar buttons](./image/Steps_image15_en.png)  
 2. Add detailed information of the run interface chart  
 In the middle section of the run interface, the latest actual values of the current waveform graph, the target value data, as well as the average, maximum and minimum values of all current data will be displayed.  
 ![New interface chart image export to PDF function illustration](./image/Steps_image16.png)  
@@ -220,7 +220,7 @@ When the waveform pause option is selected, the waveform display on the right wi
 ![Schematic diagram of pause and time-axis zooming functions](./image/Steps_image19.png)
 2. Added version verification function to the serial interface  
 Add a button for version verification in the serial interface. When pressed, it will perform communication version and driver version checks for all IPs on the current page (if the two versions are the same, it indicates that the current IP has passed the check; otherwise, it indicates that it has failed). Three colors will be used to display the results of the version check. Green indicates that the current IP's version check has passed, yellow indicates that the current IP does not exist, and red indicates that the version check of the current IP's executor has failed.  
-![Version verification function diagram](./image/Steps_image20.png)
+![Version verification function diagram](./image/Steps_image20_en.png)
 3. During the upgrade process, a secondary confirmation interface for the upgrade has been added, and version matching has also been implemented during the upgrade process.  
 When the upgrade button for any communication or driver is pressed, a secondary upgrade prompt box will pop up, which will display the current upgraded version. When upgrading from version v1 to v2, it is restricted to only upgrading the communication firmware. When changing from version v2 to v1, it is restricted to only changing the driver firmware.
 ![Version matching function diagram](./image/Steps_image21.png)
