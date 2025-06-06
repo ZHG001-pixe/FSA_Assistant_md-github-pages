@@ -1,8 +1,8 @@
 <header>
 
-# FSA_Assistant 使用帮助教程
+<!-- # FSA_Assistant 使用帮助教程 -->
 
-[中文(cn)](./README.md)  [英文(en)](./README_en.md)  
+<!-- [中文(cn)](./README.md)  [英文(en)](./README_en.md)   -->
 FSA_Assistant 是一个上位机软件，它集成了全面的监视、控制、数据分析及软件升级功能于一体。你可以通过 FSA_Assistant 来对执行器进行查看信息，控制运动，监控数据，升级版本等功能。其主要分为一个导航栏和四个子页面。
 
 </header>

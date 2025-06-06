@@ -1,8 +1,8 @@
 <header>
 
-# FSA_Assistant Use the help tutorial
+<!-- # FSA_Assistant Use the help tutorial -->
 
-[中文(cn)](./README.md)      [英文(en)](./README_en.md)  
+<!-- [中文(cn)](./README.md)      [英文(en)](./README_en.md)   -->
 FSA_Assistant is an upper-level computer software that integrates comprehensive monitoring, control, data analysis and software upgrade functions. You can use FSA_Assistant to view information of the actuator, control its movement, monitor data, and upgrade the version, etc. It is mainly divided into a navigation bar and four sub-pages.
 
 </header>
