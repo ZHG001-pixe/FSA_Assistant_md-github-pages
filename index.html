@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MD 文件切换</title>
+  <!-- 引入 Markdown 解析库 -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    #content { margin-top: 20px; border: 1px solid #ddd; padding: 15px; }
+    button { padding: 10px; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <button onclick="loadContent('README_en.md')">README_en</button>
+  <button onclick="loadContent('README.md')">README</button>
+  <div id="content">内容将在这里显示</div>
+
+  <script>
+    // 动态加载并渲染 Markdown
+    async function loadContent(filename) {
+      try {
+        const response = await fetch(filename);
+        const markdown = await response.text();
+        document.getElementById('content').innerHTML = marked.parse(markdown);
+      } catch (error) {
+        document.getElementById('content').innerHTML = `<p>加载失败: ${error}</p>`;
+      }
+    }
+    // 默认加载第一个文件
+    loadContent('README_en.md');
+  </script>
+</body>
+</html>
